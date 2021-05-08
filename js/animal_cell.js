@@ -39,25 +39,23 @@ function main() {
     addlight(10, 10, 10);
     addlight(10, -10, 10);
 
-    function dumpObject(obj, lines = [], isLast = true, prefix = '') {
-        const localPrefix = isLast ? '└─' : '├─';
-        lines.push(`${prefix}${prefix ? localPrefix : ''}${obj.name || '*no-name*'} [${obj.type}]`);
-        const newPrefix = prefix + (isLast ? '  ' : '│ ');
-        const lastNdx = obj.children.length - 1;
-        obj.children.forEach((child, ndx) => {
-          const isLast = ndx === lastNdx;
-          dumpObject(child, lines, isLast, newPrefix);
-        });
-        return lines;
-      }
+    const models = {
+        membrane: { url: 'assets/animal_cell/membrane.gltf' },
+        cytoplasm: { url: 'assets/animal_cell/cytoplasm.gltf' },
+        mitochondria: { url: 'assets/animal_cell/mitochondria.gltf' },
+        golgi: { url: 'assets/animal_cell/golgi.gltf' },
+        nucleus: { url: 'assets/animal_cell/nucleus.gltf' },
+        er: { url: 'assets/animal_cell/er.gltf' },
+        vl: { url: 'assets/animal_cell/vl.gltf' }
+    }
 
     {
         const gltfLoader = new GLTFLoader();
-        gltfLoader.load('assets/animal_cell/scene.gltf', (gltf) => {
-            const root = gltf.scene;
-            scene.add(root);
-            console.log(dumpObject(root).join('\n'));
-        });
+        for (const model of Object.values(models)) {
+            gltfLoader.load(model.url, (gltf) => {
+                model.gltf = gltf;
+            });
+        }
     }
 
     function resizeRendererToDisplaySize(renderer) {

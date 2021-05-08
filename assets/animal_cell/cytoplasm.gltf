@@ -1,0 +1,126 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.5.17",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Sphere.001",
+            "scale" : [
+                1.1907440423965454,
+                1.2664616107940674,
+                1.2664616107940674
+            ],
+            "translation" : [
+                0.1974349021911621,
+                0,
+                -0.28827154636383057
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material.004",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.49549737572669983,
+                    0.21691808104515076,
+                    0.4132920801639557,
+                    1
+                ],
+                "metallicFactor" : 0.35833367705345154
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Sphere.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 3381,
+            "max" : [
+                2.03995680809021,
+                0.03055177815258503,
+                3.3171536922454834
+            ],
+            "min" : [
+                -2.80759596824646,
+                -0.1757611632347107,
+                -2.1771633625030518
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 3381,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 3381,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 12183,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 40572,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 40572,
+            "byteOffset" : 40572
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 27048,
+            "byteOffset" : 81144
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 24366,
+            "byteOffset" : 108192
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 132560,
+            "uri" : "cytoplasm.bin"
+        }
+    ]
+}
