@@ -7,6 +7,7 @@ function main() {
     const renderer = new THREE.WebGLRenderer({canvas});
 
     const objects = [];
+    const urls = [];
 
     const fov = 45;
     const aspect = 2;  // the canvas default
@@ -58,6 +59,10 @@ function main() {
                 model.gltf = gltf;
                 scene.add(gltf.scene);
                 objects.push(gltf.scene);
+                urls.push(model.url);
+                console.log(model, gltf.scene.uuid)
+                // console.log(objects);
+                // console.log(urls);
             });
         }
     }
@@ -97,36 +102,43 @@ function main() {
             for (var i=0; i<objects.length; i++) {
                 objects[i].visible = false;
             }
-            if (mc.checked == true) {
-                // console.log("n");
-                // 4
-                objects[0].visible = true;
-                objects[1].visible = true;
-            }
-            if (n.checked == true) {
-                // console.log("n");
-                // 4
-                objects[5].visible = true;
-            }
-            if (er.checked == true) {
-                // console.log("er");
-                // 5
-                objects[6].visible = true;
-            }
-            if (ga.checked == true) {
-                // console.log("ga");
-                // 3
-                objects[3].visible = true;
-            }
-            if (m.checked == true) {
-                // console.log("m");
-                // 2
-                objects[2].visible = true;
-            }
-            if (vl.checked == true) {
-                // console.log("vl");
-                // 6
-                objects[4].visible = true;
+            for (var i=0; i<objects.length; i++) {
+                if (mc.checked == true) {
+                    // console.log("m&C");
+                    if (urls[i] === "assets/animal_cell/membrane.gltf" || urls[i] === "assets/animal_cell/cytoplasm.gltf") {
+                        objects[i].visible = true;
+                    }
+                }
+                if (n.checked == true) {
+                    // console.log("n");
+                    if (urls[i] === "assets/animal_cell/nucleus.gltf") {
+                        objects[i].visible = true;
+                    }
+                }
+                if (er.checked == true) {
+                    // console.log("er");
+                    if (urls[i] === "assets/animal_cell/er.gltf") {
+                        objects[i].visible = true;
+                    }
+                }
+                if (ga.checked == true) {
+                    // console.log("ga");
+                    if (urls[i] === "assets/animal_cell/golgi.gltf") {
+                        objects[i].visible = true;
+                    }
+                }
+                if (m.checked == true) {
+                    // console.log("m");
+                    if (urls[i] === "assets/animal_cell/mitochondria.gltf") {
+                        objects[i].visible = true;
+                    }
+                }
+                if (vl.checked == true) {
+                    // console.log("vl");
+                    if (urls[i] === "assets/animal_cell/vl.gltf") {
+                        objects[i].visible = true;
+                    }
+                }
             }
         }
     
