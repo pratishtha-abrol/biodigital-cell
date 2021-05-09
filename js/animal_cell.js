@@ -106,12 +106,12 @@ function main() {
             if (n.checked == true) {
                 // console.log("n");
                 // 4
-                objects[4].visible = true;
+                objects[5].visible = true;
             }
             if (er.checked == true) {
                 // console.log("er");
                 // 5
-                objects[5].visible = true;
+                objects[6].visible = true;
             }
             if (ga.checked == true) {
                 // console.log("ga");
@@ -126,7 +126,7 @@ function main() {
             if (vl.checked == true) {
                 // console.log("vl");
                 // 6
-                objects[6].visible = true;
+                objects[4].visible = true;
             }
         }
     
