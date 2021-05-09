@@ -1,0 +1,133 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.5.17",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Roundcube.000",
+            "rotation" : [
+                -0.010365775786340237,
+                0.7342841625213623,
+                0.017742110416293144,
+                0.6785311698913574
+            ],
+            "scale" : [
+                0.19266553223133087,
+                0.19266551733016968,
+                0.19266553223133087
+            ],
+            "translation" : [
+                1.920080542564392,
+                -0.20890621840953827,
+                -0.20091867446899414
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material.011",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    1,
+                    0.8855335116386414,
+                    0.07652610540390015,
+                    1
+                ],
+                "metallicFactor" : 0.383333683013916,
+                "roughnessFactor" : 0.18333333730697632
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Roundcube.004",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 8855,
+            "max" : [
+                1.0490111112594604,
+                2.6638998985290527,
+                0.9529796242713928
+            ],
+            "min" : [
+                -13.514127731323242,
+                -0.9321905970573425,
+                -23.30931854248047
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 8855,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 8855,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 27480,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 106260,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 106260,
+            "byteOffset" : 106260
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 70840,
+            "byteOffset" : 212520
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 54960,
+            "byteOffset" : 283360
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 338320,
+            "uri" : "vl.bin"
+        }
+    ]
+}

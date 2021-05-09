@@ -1,0 +1,236 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.5.17",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Sphere.005",
+            "rotation" : [
+                0.0279989130795002,
+                -0.998753547668457,
+                -0.0006104973144829273,
+                -0.04131872206926346
+            ],
+            "scale" : [
+                0.05249156057834625,
+                0.04511867091059685,
+                0.04511867091059685
+            ],
+            "translation" : [
+                -0.3804614543914795,
+                0.024485886096954346,
+                3.26538348197937
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "Sphere.002",
+            "rotation" : [
+                0.0279989130795002,
+                -0.998753547668457,
+                -0.0006104973144829273,
+                -0.04131872206926346
+            ],
+            "scale" : [
+                0.05249156057834625,
+                0.04511867091059685,
+                0.04511867091059685
+            ],
+            "translation" : [
+                -0.3804614543914795,
+                0.024485886096954346,
+                3.26538348197937
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material.007",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.7806076407432556,
+                    0.39291146397590637,
+                    0.12309036403894424,
+                    1
+                ],
+                "metallicFactor" : 0.383333683013916,
+                "roughnessFactor" : 0.18333333730697632
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material.008",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.18978148698806763,
+                    0.1566256284713745,
+                    0.7304545640945435,
+                    1
+                ],
+                "metallicFactor" : 0.383333683013916,
+                "roughnessFactor" : 0.18333333730697632
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Sphere.005",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Sphere.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 3003,
+            "max" : [
+                7.838291168212891,
+                3.4534878730773926,
+                3.931891441345215
+            ],
+            "min" : [
+                -7.484175682067871,
+                -3.5254464149475098,
+                -3.9469616413116455
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 3003,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 3003,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 12480,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 2437,
+            "max" : [
+                54.097232818603516,
+                4.835338592529297,
+                131.02078247070312
+            ],
+            "min" : [
+                -21.200870513916016,
+                -9.708267211914062,
+                -4.798412322998047
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 2437,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 2437,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 11022,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 36036,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 36036,
+            "byteOffset" : 36036
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 24024,
+            "byteOffset" : 72072
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 24960,
+            "byteOffset" : 96096
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 29244,
+            "byteOffset" : 121056
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 29244,
+            "byteOffset" : 150300
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 19496,
+            "byteOffset" : 179544
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 22044,
+            "byteOffset" : 199040
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 221084,
+            "uri" : "mitochondria.bin"
+        }
+    ]
+}

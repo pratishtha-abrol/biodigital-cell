@@ -1,0 +1,49 @@
+html, body {
+    width:100%;
+    height:100%;
+}
+  
+html, body {
+    background: linear-gradient(#00c8ff, #023042);
+}
+ 
+.panel {
+    z-index: 50;  
+    position:absolute;
+    top:0;
+    left:0;
+    padding: 2vw 3vw;
+    width: 20%;
+    height: 100%;
+    opacity: 0.8;
+    box-sizing: border-box;
+    background-color: rgb(190, 74, 74);
+}
+
+.panel-title {
+    z-index:100;
+    position:relative;
+    text-align:center;
+    font-size: 1vw;
+    padding-top: 50px;
+    color: white;
+}
+
+.render {
+    width: 100%;
+    height: 80%;
+    position:relative;
+    box-sizing: border-box;
+    margin-top: 2vw;
+    border: 2px solid rgb(0, 0, 0);
+    letter-spacing:0.25vw;
+    line-height: 2vw;
+    font-weight:400;
+    color: black;
+    padding-right: 0.5vw;
+    text-align:left;
+    text-transform:uppercase;
+    letter-spacing:0.25vw;
+    font-size:0.8vw;
+    float:left;
+}

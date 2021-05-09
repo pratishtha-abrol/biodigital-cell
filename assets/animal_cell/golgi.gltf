@@ -1,0 +1,133 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.5.17",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "BezierCurve.002",
+            "rotation" : [
+                0,
+                0.36943307518959045,
+                0,
+                0.929257333278656
+            ],
+            "scale" : [
+                0.4146963953971863,
+                0.4146963953971863,
+                0.4146963953971863
+            ],
+            "translation" : [
+                1.1487455368041992,
+                -0.3654572665691376,
+                2.1992857456207275
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material.006",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.7806076407432556,
+                    0.39291146397590637,
+                    0.12309036403894424,
+                    1
+                ],
+                "metallicFactor" : 0.383333683013916,
+                "roughnessFactor" : 0.18333333730697632
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "CUBezierCurve.000",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 5767,
+            "max" : [
+                3.7244608402252197,
+                1.0628482103347778,
+                0.774066150188446
+            ],
+            "min" : [
+                -2.4505996704101562,
+                -0.6987216472625732,
+                -2.2193984985351562
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 5767,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 5767,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 24042,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 69204,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 69204,
+            "byteOffset" : 69204
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 46136,
+            "byteOffset" : 138408
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 48084,
+            "byteOffset" : 184544
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 232628,
+            "uri" : "golgi.bin"
+        }
+    ]
+}
