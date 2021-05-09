@@ -6,6 +6,8 @@ function main() {
     const canvas = document.querySelector('#c');
     const renderer = new THREE.WebGLRenderer({canvas});
 
+    const objects = [];
+
     const fov = 45;
     const aspect = 2;  // the canvas default
     const near = 0.1;
@@ -54,6 +56,8 @@ function main() {
         for (const model of Object.values(models)) {
             gltfLoader.load(model.url, (gltf) => {
                 model.gltf = gltf;
+                scene.add(gltf.scene);
+                objects.push(gltf.scene);
             });
         }
     }
@@ -75,6 +79,55 @@ function main() {
             const canvas = renderer.domElement;
             camera.aspect = canvas.clientWidth / canvas.clientHeight;
             camera.updateProjectionMatrix();
+        }
+        // console.log(objects);
+
+        var n = document.getElementById("n");
+        var er = document.getElementById("er");
+        var ga = document.getElementById("ga");
+        var m = document.getElementById("m");
+        var vl = document.getElementById("vl");
+        var mc = document.getElementById("mc");
+
+        if (mc.checked == false && n.checked == false && er.checked == false &&  ga.checked == false &&  m.checked == false &&  vl.checked == false) {
+            for (var i=0; i<objects.length; i++) {
+                objects[i].visible = true;
+            }
+        } else {
+            for (var i=0; i<objects.length; i++) {
+                objects[i].visible = false;
+            }
+            if (mc.checked == true) {
+                // console.log("n");
+                // 4
+                objects[0].visible = true;
+                objects[1].visible = true;
+            }
+            if (n.checked == true) {
+                // console.log("n");
+                // 4
+                objects[4].visible = true;
+            }
+            if (er.checked == true) {
+                // console.log("er");
+                // 5
+                objects[5].visible = true;
+            }
+            if (ga.checked == true) {
+                // console.log("ga");
+                // 3
+                objects[3].visible = true;
+            }
+            if (m.checked == true) {
+                // console.log("m");
+                // 2
+                objects[2].visible = true;
+            }
+            if (vl.checked == true) {
+                // console.log("vl");
+                // 6
+                objects[6].visible = true;
+            }
         }
     
         renderer.render(scene, camera);
